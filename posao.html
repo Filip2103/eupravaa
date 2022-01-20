@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PHARMACOM-Posao</title>
+    <link rel="shortcut icon" href="slike/ikonica.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <table>
+                <tr>
+                    <td>
+                        <img id="logo"src="slike/logo.jpg" alt="">
+                    </td>
+                    <td>
+                      
+                        <h2 class="naslov">PHARMACOM</h2>
+                    </td>
+                    <td id="red">
+                        <a href="index.html">Početna</a>
+                        <a href="proizvodi.html">Proizvodi</a>
+                        <a href="saveti.html">Saveti o zdravlju</a>
+                        <a class="aktivna" href="posao.html">Posao</a>
+                        <a href="autor.html">O autoru</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div class="content">
+            <h2 class="p1 a1">Posao</h2>
+
+            <div id="konkurs">
+                <div id="prijava">
+                    <h3>Prijava za posao:</h3>
+                    <p>Ukoliko želite da postanete deo našeg tima molimo Vas da popunite prijavu za posao kako bi mogli da Vas kontaktiramo:</p>
+                    <form action="">
+                            <fieldset>
+                                <table>
+                                    <tr>
+                                        <td>Ime:</td>
+                                        <td><input type="text" placeholder="Ime:"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prezime:</td>
+                                        <td><input type="text" placeholder="Prezime:"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><input type="text" placeholder="Email:"></td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Radno mesto za koje se prijavljujete:</td>
+                                        <td>
+                                            <select name="radno" id="radno">
+                                                <option value="default">Izaberite radno mesto:</option>
+                                                <option value="farmaceut">Diplomirani farmaceut</option>
+                                                <option value="pripravnik1">Diplomirani farmaceut-pripravnik</option>
+                                                <option value="tehnicar">Farmaceutski tehničar</option>
+                                                <option value="pripravnik2">Farmaceutski tehničar - pripravnik</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Da li posedujete radno iskustvo</td>
+                                        <td>
+                                            <input type="radio" name="iskustvo" id="poseduje">Da
+                                            <input type="radio" name="iskustvo" id="poseduje">Ne
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Opišite sebe u nekoliko rečenica:</td>
+                                        <td>
+                                        <textarea name="opis" id="cv" cols="15" rows="5"
+                                        placeholder="Ja sam Petar Petrović dolazim iz Aleksinca..."></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button id="submit">Prosledi</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                    </form>
+                </div>
+                <div id="opis">
+                    <p>
+                        Pridružite se našem timu i zajedno sa nama učestvujte u 
+                        razvoju mreže apoteka koja teži visoko kvalitetnoj usluzi zahvaljujući stručnim i profesionalnim zaposlenima.<br>
+                        <br><br>
+
+                        Koleginice i kolege koje rade u PHARMACOM lancu svakodnevno rade na izgradnji odnosa poverenja sa svojim pacijentima pružajući savete i podršku <br><br><br>
+                        <ku class="br"></ku>
+                        <ku class="br"></ku>
+
+                        Ukoliko smatrate da svojim dosadašnjim iskustvom i stečenim znanjem možete doprineti kontinuiranom unapređenju 
+                        kvaliteta rada i pružanja usluge, budite slobodni da konkurišete i da nas kontaktirate. <br><br><br>
+
+                        Potrebni su nam stručni, posvećeni, odgovorni, profesionalni, timski orijentisani kandidati koji su 
+                        spremni na rad u dinamičnom okruženju.
+                    </p>
+                </div>
+            </div>
+
+            <footer>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Kontakt:</h3>
+                            <p>Pharmacom Srbija<br>
+                               Dušanova 33,Niš<br>
+                               018/830-533
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/?lang=sr" class="fa fa-twitter"></a>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </div>
+    <div id="prozor" class="modal">
+        <div class="modal-content">
+            <span class="zatvori">&times;</span>
+            <p>
+                <center>
+                    <h3>Čestitam! Uspešno ste popunili prijavu za posao!</h3>
+
+                    <br/>
+                        Za nekoliko dana možete očekivati poziv od strane poslodavca naše firme. <br>
+                        Nadamo se da ćemo uskoro raditi zajedno u istom timu!
+                    
+                </center>
+            </p>
+        </div>
+    </div>
+    <script src="java/posao.js"></script>
+</body>
+</html>
